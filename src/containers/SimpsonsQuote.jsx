@@ -14,7 +14,7 @@ export function SimpsonsQuote() {
     return (
         <div>
             <QuoteButton handleGetQuote={handleGetQuote}/>
-            
+            {!data && <h2>Click to get a quote!</h2>}
             <QuoteDisplay {...data}/>
         </div>
     )
